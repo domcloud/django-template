@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="author" content="{% block meta_author %}{% endblock %}">
+
+    <title>{% block page_title %}{{ _("My Site") }}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<body>
+{% block body %}
+
+  <div class="container py-5">
+    {% block content %}{% endblock %}
+  </div>
+
+  <script src="{% static 'js/base.js' %}"></script>
+
+{% endblock %}
+</body>
+</html>

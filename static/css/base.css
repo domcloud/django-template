@@ -1,0 +1,12 @@
+/* CSS */
+
+body {
+  text-align: center;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+img {
+  width: 200px;
+}
+blockquote {
+  color: gray;
+}
